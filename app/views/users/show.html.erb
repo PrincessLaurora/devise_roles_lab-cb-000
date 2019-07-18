@@ -2,6 +2,7 @@
 
 <h2>Your email:</h2>
    <%=@user.email%><br>
-Your posts: <%@user.posts.each do |post| %>
+<h2>Your posts:</h2>
+<%@user.posts.each do |post| %>
 <li><%=post.content%></li>
 <%end%>
