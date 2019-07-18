@@ -1,6 +1,7 @@
 <h1>User</h1>
 
-Your email: <%=@user.email%><br>
+<h2>Your email:</h2>
+   <%=@user.email%><br>
 Your posts: <%@user.posts.each do |post| %>
 <li><%=post.content%></li>
 <%end%>
