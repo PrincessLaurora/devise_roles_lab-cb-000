@@ -7,7 +7,7 @@
   <li><%=post.content%></li>
 
 <% if @user == current_user || current_user.vip? || current_user.admin? %>
-        <a href="/posts/<%= "#{@post.id}" %>/edit">Edit</a>
+        <a href="/posts/<%= "#{post.id}" %>/edit">Edit</a>
         <%= link_to "Create a new post", new_post_path%>
       <% end %>
       <%end%>
